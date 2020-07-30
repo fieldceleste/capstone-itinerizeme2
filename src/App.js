@@ -61,8 +61,7 @@ render() {
         />
           <Card />
           <Switch>
-         <Route exact path="/addtrip" Component={AddTrip} />
-
+          <Route exact path="/addtrip" render={() => <ConfigController store={this.state.store} />} />
         </Switch>
         </React.Fragment>
        </Router>
