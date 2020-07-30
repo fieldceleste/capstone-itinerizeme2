@@ -32,13 +32,18 @@ import santorini from './Header/img/santorini.jpg'
 import rio from './Header/img/rio.jpg'
 import york from './Header/img/york.jpg'
 
+//itinerary 
+import ConfigController from "./ConfigController";
 
-import AddTrip from './Itinerary/AddTrip';
+//itinerary styles
+import "./style/core.css";
+import Store from './store/Store';
 
 
 class App extends Component{
     state = {
-      navbarOpen: false
+      navbarOpen: false,
+      store: new Store()
     }
   
     handleNavbar = () => {
